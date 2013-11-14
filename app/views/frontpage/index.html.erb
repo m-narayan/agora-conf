@@ -1,47 +1,53 @@
-<div id="content_top">
 
-  <div id="content_top_container">
-    <div class="registration">
-      <span><%= t('frontpage.register_sentence') %></span><br/>
-      <div class="join_button">
-        <a href="<%= signup_path %>" class="basic_button medium_button orange_button"><span><%= t('register.one') %></span></a>
-      </div>
+
+  <div id="container">
+  <div id="top">
+    <div class="logo">
     </div>
-    <div class="description">
-      <%= t('frontpage.project_description').html_safe %>
-    </div>
-    <div class="clearer"><span>&nbsp;</span></div>
-  </div>
-
-</div>
-
-<div id="content_stats">
-  <b><%= t('frontpage.stats.title') %></b> <%= t('frontpage.stats.text', :users => @stats[:users], :spaces => @stats[:spaces], :meetings => @stats[:meetings]) %>
-</div>
-
-<div id="content_container">
-
-  <div id="public_spaces">
-    <div class="spaces_left">
-      <h2><%=t('frontpage.popular_spaces')%></h2>
-      <% if @popular_spaces.empty? %>
-        <br/>
-        <%= t('frontpage.no_spaces') %>
-      <% else %>
-        <%= render :partial => 'space_list', :locals => { :spaces => @popular_spaces } %>
-      <% end %>
-    </div>
-    <div class="spaces_right">
-      <h2><%=t('frontpage.running_spaces')%></h2>
-      <% if @running_spaces.empty? %>
-        <br/>
-        <%= t('frontpage.no_rooms') %>
-      <% else %>
-        <%= render :partial => 'space_list', :locals => { :spaces => @running_spaces } %>
-      <% end %>
+    <div id="TextHeader">
+      Cash flow improvement specialists for healthcare providers
+      <br/>
+      <br/>
     </div>
   </div>
-  <div class="clearer"><span>&nbsp;</span></div>
+  <div id="login1">
+    <%= form_tag session_url(:protocol => current_site.protocol),:autocomplete=>"off" do -%>
+      <table border="0">
+        <tr>
+          <td style="padding-bottom: 10px"><span>User Name</span></td>
+          <td style="padding-left: 16px;padding-bottom: 10px"><div class="roundText">
+            <%= text_field_tag 'login', params[:login], :class=>"txtField", :id=>"nametxt", :style=> "border:none;border-style: hidden;" %>
+            <!--<input autocomplete="off"  type="text" id="nametxt" class="txtField" name="nametxt" value="" />-->
+          </div></td>
+        </tr>
+        <tr>
+          <td><span>Password</span></td>
+          <td style="padding-left: 16px"><div class="roundText">
+            <%= password_field_tag 'password', nil, :class=>"txtField", :id=> "passtxt" %>
+            <!--<input autocomplete="off" type="password" id="passtxt" class="txtField" name="passtxt" value="" />-->
+          </div>
+        </tr>
+        <tr><td></td>
+          <td> <div id="btncont">
+            <button type="submit" class="Lbutton orange"><%=t("login.one")%></button>
+            <!--<input type="submit" id="btn" value="Login" class="Lbutton orange" name="submit" />-->
+          </div>
+          </td>
+        </tr>
+      </table>
+    <% end -%>
+  </div>
+       </div>
 
-</div>
-
+  <script>
+      if (navigator.userAgent.toLowerCase().indexOf("chrome") >= 0) {
+          $(window).load(function(){
+              $('input:-webkit-autofill').each(function(){
+                  var text = $(this).val();
+                  var name = $(this).attr('name');
+                  $(this).after(this.outerHTML).remove();
+                  $('input[name=' + name + ']').val(text);
+              });
+          });
+      }
+  </script>

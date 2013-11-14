@@ -4,8 +4,7 @@
 <html>
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <title><%= content_for?(:title) ? yield(:title) : current_site.name %></title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <title>Agora Healthware</title>
 
         <%= stylesheet_link_tag "common", :media => "screen, projection" %>
         <%= stylesheet_link_tag "header_big", :media => "screen, projection" %>
@@ -43,7 +42,7 @@
   <body>
     <div id="site">
       <%= render :partial => "layouts/frontpage_global" %>
-      <div id="home">
+
         <div id="header">
           <%= render :partial => "layouts/frontpage_header" %>
         </div>
@@ -54,9 +53,9 @@
           <% end %>
         </div>
 
-        <div id="content">
+
           <%= yield %>
-        </div>
+
 
         <div id="sponsor-wrapper">
           <%= render :partial => "layouts/sponsor" %>
@@ -68,7 +67,7 @@
 
       </div>
 
-    </div>
+
 
     <%= render :partial => "layouts/analytics" %>
   </body>

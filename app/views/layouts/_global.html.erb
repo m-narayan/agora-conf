@@ -49,13 +49,11 @@
   <span id="global-logo">
         <% if logged_in? %>
           <%= link_to home_path, menu_options(:home) do %>
-            <span class="title"><%= t('mconf') %></span>
-            <span class="small"><%= t('beta') %></span>
+            <span class="title">Agora Healthware</span>
           <% end %>
         <% else %>
           <%= link_to "/" do %>
-            <span class="title"><%= t('mconf') %></span>
-            <span class="small"><%= t('beta') %></span>
+            <span class="title">Agora Healthware</span>
           <% end %>
         <% end %>
   </span>
