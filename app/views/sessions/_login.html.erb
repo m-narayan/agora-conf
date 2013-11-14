@@ -1,5 +1,5 @@
 <div id="login_div" class="blue_title">
-  <div id="lightbox-logo"><span><%= image_tag("mconf_logo_small.png",:class=>"icon")%><%= t('vcc') %></span></div>
+  <div id="lightbox-logo"><span>Agora Healthcare</span></div>
   <div class="form">
     <%= form_tag session_url(:protocol => current_site.protocol), :class => "login_form" do -%>
       <div>
@@ -9,9 +9,6 @@
       <div>
         <label for="password"><%= t('login.password') %></label><br/>
         <%= password_field_tag 'password' %>
-      </div>
-      <div>
-        <label for="remember_me"><%= check_box_tag ('remember_me') %> <%= t('remember_me') %></label>
       </div>
       <div class="button">
         <button type="submit" class="basic_button blue_button"><%=t("login.one")%></button>
@@ -33,11 +30,4 @@
     </div>
   <% end %>
 
-  <div class="other-links">
-    <span>
-      <%= link_to t('register_now'), signup_path %> |
-      <%= link_to t('user.lost_password'), lost_password_path %> |
-      <%= link_to t('user.resend_confirmation_email.link'), resend_confirmation_path %>
-    </span>
-  </div>
 </div>

@@ -15,8 +15,6 @@
         <li><%= link_to t('logout', :user => current_user.name), logout_path, :id => "logout_link" %></li>
       <% else %>
         <li><%= link_to t('login.one'), login_path(:return_to => request.fullpath), :class => "login_link" %></li>
-        <li class="divider">|</li>
-        <li><%= link_to t('register.one'), signup_path, :class => "login_link" %></li>
       <% end %>
     </ul>
 
