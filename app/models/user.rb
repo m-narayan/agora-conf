@@ -50,6 +50,7 @@ class User < ActiveRecord::Base
   attr_accessible :timezone
   attr_accessible :expanded_post
   attr_accessible :notification
+  attr_accessible :activated_at
   attr_accessible :chat_activation
   attr_accessible :special_event_id
   attr_accessible :superuser
