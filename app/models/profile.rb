@@ -21,6 +21,7 @@ require 'prism'
 
 class Profile < ActiveRecord::Base
   attr_accessor :vcard
+  attr_accessible :full_name
   
   belongs_to :user
   accepts_nested_attributes_for :user
@@ -37,6 +38,7 @@ class Profile < ActiveRecord::Base
         profile.url = "http://" << profile.url 
       end
     end
+    true
   end
 
   before_validation :from_vcard

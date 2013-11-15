@@ -20,7 +20,7 @@ require 'digest/sha1'
 class User < ActiveRecord::Base
   # LoginAndPassword Authentication:
   acts_as_agent :activation => true,
-                :openid_server => true
+                :openid_server => false
 
   validates_presence_of :email
   validates_exclusion_of :login, :in => %w( xmpp_server )
