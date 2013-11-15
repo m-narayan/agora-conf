@@ -21,8 +21,7 @@ require 'prism'
 
 class Profile < ActiveRecord::Base
   attr_accessor :vcard
-  attr_accessible :full_name
-  
+
   belongs_to :user
   accepts_nested_attributes_for :user
 
