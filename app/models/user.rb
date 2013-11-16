@@ -108,7 +108,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  delegate :full_name, :logo, :organization, :city, :country, :to => :profile!
+  delegate :full_name,:prefix_key, :logo, :organization, :city, :country, :to => :profile!
   alias_attribute :name, :full_name
   alias_attribute :title, :full_name
   alias_attribute :permalink, :login
@@ -117,10 +117,13 @@ class User < ActiveRecord::Base
   # so we have to temporally cache it until the user is created; :_full_name
   attr_accessor :_full_name
   attr_accessible :_full_name
+  attr_accessor :_prefix_key
+  attr_accessible :_prefix_key
+
   has_permalink :_full_name, :login
 
   after_create do |user|
-    user.create_profile :full_name => user._full_name
+    user.create_profile :full_name => user._full_name,:prefix_key => user._prefix_key
 
     # Checking if we have to join the space and the event
     if (! user.special_event.nil?)
