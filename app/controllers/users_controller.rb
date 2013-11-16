@@ -22,6 +22,7 @@ class UsersController < ApplicationController
   include ActionController::Agents
 
   before_filter :space!, :only => [ :index ]
+  before_filter :check_permission , :only => [ :new,:create,:update,:destroy]
 
   # Permission filters
   authorization_filter [ :read, :performance ], :space, :only => [ :index ]
@@ -279,4 +280,11 @@ class UsersController < ApplicationController
     end
   end
 
+end
+
+def check_permission
+  config = YAML.load_file(File.join(::Rails.root, "config", "setup_conf.yml"))
+  if config["default"]["socket_login"]=="true"
+    redirect_to(root_path)
+  end
 end
