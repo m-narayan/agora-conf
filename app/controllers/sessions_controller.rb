@@ -69,8 +69,10 @@ class SessionsController
           user._full_name = full_name
           user._prefix_key="title_formal.#{title}"
           user.save!
+          user.create_bbb_room
         else
           user.update_attributes(:email => response["user_email"],:password=>params[:password],:password_confirmation =>params[:password])
+          user.update_bbb_room
           #user.profile.update_attributes(:full_name => response["full_name"])
         end
       end

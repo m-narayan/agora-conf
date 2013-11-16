@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en/mconf.yml" afterPath="$PROJECT_DIR$/config/locales/en/mconf.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mconf-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +17,7 @@
     <file path="/application.html.erb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384424682694" ignored="false" />
     <file path="/setup_conf.yml" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384591087789" ignored="false" />
     <file path="/_login.html.erb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384435835257" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384586851500" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384603594814" ignored="false" />
     <file path="/fragment.rb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384596290056" ignored="false" />
     <file path="/profile.rb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384515172873" ignored="false" />
     <file path="/user.rb" changelist="2eeee7cd-e152-47eb-9f1b-572e4fb543c0" time="1384597748644" ignored="false" />
@@ -46,85 +47,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="37" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-11.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="notifier.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/mailers/notifier.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="233" column="70" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invite_room.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invites/invite_room.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-15.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mconf.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/locales/en/mconf.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1105" column="42" selection-start="61318" selection-end="61323" vertical-scroll-proportion="0.33333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delayed_job.log" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log/delayed_job.log">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="111" selection-start="17973" selection-end="17973" vertical-scroll-proportion="-7.37931">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invites_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/invites_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="62" selection-start="3087" selection-end="3097" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rendering.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/actionpack-3.0.20/lib/abstract_controller/rendering.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="118" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html.erb.old" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/frontpage/about.html.erb.old">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="52" selection-start="213" selection-end="265" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about2.html.erb.old" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/frontpage/about2.html.erb.old">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="52" selection-start="213" selection-end="265" vertical-scroll-proportion="0.0">
+            <state line="93" column="0" selection-start="3304" selection-end="3304" vertical-scroll-proportion="0.3323442">
               <folding />
             </state>
           </provider>
@@ -133,7 +59,25 @@
       <file leaf-file-name="sessions_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0">
+            <state line="80" column="0" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="74" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="callbacks.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/activesupport-3.0.20/lib/active_support/callbacks.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="470" column="0" selection-start="14801" selection-end="14801" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +108,6 @@
         <option value="$PROJECT_DIR$/config/initializers/delayed_job_config.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/vendor/plugins/station/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/frontpage/performance.html.erb.old" />
         <option value="$PROJECT_DIR$/app/views/layouts/application_without_sidebar.html.erb" />
@@ -173,6 +116,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/log/delayed_job.log" />
         <option value="$PROJECT_DIR$/config/locales/en/mconf.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
       </list>
     </option>
   </component>
@@ -200,7 +144,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="1" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -609,7 +553,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/users_controller.rb</url>
-          <line>258</line>
+          <line>263</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
@@ -622,11 +566,6 @@
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/vendor/plugins/station/app/controllers/sessions_controller.rb</url>
-          <line>12</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/mailers/notifier.rb</url>
           <line>272</line>
           <option name="timeStamp" value="67" />
@@ -636,77 +575,41 @@
           <line>224</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/user.rb</url>
+          <line>94</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
+          <line>59</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
+          <line>70</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/sessions_controller.rb</url>
+          <line>80</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="69" />
+      <option name="time" value="76" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/plugins/station/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="128" selection-start="672" selection-end="672" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/delayed_job_config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="78" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frontpage/performance.html.erb.old">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notifier/confirmation_email.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="50" selection-start="403" selection-end="403" vertical-scroll-proportion="1.2692307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application_without_sidebar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="79" selection-start="347" selection-end="347" vertical-scroll-proportion="-4.1666665">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frontpage/about2.html.erb.old">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="213" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frontpage/about.html.erb.old">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="213" selection-end="265" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="37" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-11.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1714" selection-end="1714" vertical-scroll-proportion="0.0">
+        <state line="19" column="37" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.9895833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/actionpack-3.0.20/lib/abstract_controller/rendering.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="118" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.0">
+        <state line="41" column="118" selection-start="1568" selection-end="1568" vertical-scroll-proportion="0.26409495">
           <folding />
         </state>
       </provider>
@@ -723,28 +626,28 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="111" selection-start="17973" selection-end="17973" vertical-scroll-proportion="-7.37931">
+        <state line="96" column="111" selection-start="17973" selection-end="17973" vertical-scroll-proportion="0.6948052">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/invites_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="62" selection-start="3087" selection-end="3097" vertical-scroll-proportion="0.0">
+        <state line="88" column="62" selection-start="3087" selection-end="3097" vertical-scroll-proportion="0.068249255">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/notifier.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="70" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.0">
+        <state line="233" column="70" selection-start="8968" selection-end="8968" vertical-scroll-proportion="0.84294873">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invites/invite_room.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-15.0">
+        <state line="42" column="35" selection-start="1425" selection-end="1425" vertical-scroll-proportion="1.1960133">
           <folding />
         </state>
       </provider>
@@ -752,6 +655,62 @@
     <entry file="file://$PROJECT_DIR$/config/locales/en/mconf.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1105" column="42" selection-start="61318" selection-end="61323" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/plugins/station/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.3323077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/activerecord-3.0.20/lib/active_record/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="9" selection-start="9606" selection-end="9606" vertical-scroll-proportion="0.33274648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/activerecord-3.0.20/lib/active_record/base.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="497" column="10" selection-start="24432" selection-end="24432" vertical-scroll-proportion="0.33274648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/actionpack-3.0.20/lib/action_controller/metal/rescue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="74" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.2-p290@mconf/gems/activesupport-3.0.20/lib/active_support/callbacks.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="470" column="0" selection-start="14801" selection-end="14801" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="0" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="3304" selection-end="3304" vertical-scroll-proportion="0.3323442">
           <folding />
         </state>
       </provider>
