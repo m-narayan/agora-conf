@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130607174256) do
+ActiveRecord::Schema.define(:version => 20131116073338) do
 
   create_table "admissions", :force => true do |t|
     t.string   "type"
@@ -478,6 +478,9 @@ ActiveRecord::Schema.define(:version => 20130607174256) do
     t.string   "recaptcha_private_key"
     t.string   "recaptcha_public_key"
     t.boolean  "use_recaptcha",                  :default => false
+    t.boolean  "site_agora_login"
+    t.string   "site_agora_login_server"
+    t.string   "site_agora_login_port"
   end
 
   create_table "source_importations", :force => true do |t|

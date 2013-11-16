@@ -283,8 +283,7 @@ class UsersController < ApplicationController
 end
 
 def check_permission
-  config = YAML.load_file(File.join(::Rails.root, "config", "setup_conf.yml"))
-  if config["default"]["socket_login"]=="true"
+  if Site.current.site_agora_login
     redirect_to(root_path)
   end
 end

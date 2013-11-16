@@ -44,6 +44,9 @@ puts "  exception_notifications_prefix: #{config["site_exception_notifications_p
 puts "  shib_enabled: #{config["site_shibboleth"] == "true"}"
 puts "  shib_email_field: #{config["site_shibboleth_email_field"]}"
 puts "  shib_name_field: #{config["site_shibboleth_name_field"]}"
+puts "  site_agora_login: #{config["site_agora_login"]}"
+puts "  site_agora_login_server: #{config["site_agora_login_server"]}"
+puts "  site_agora_login_port: #{config["site_agora_login_port"]}"
 u = Site.create :name => config["site_name"],
                 :description => config["site_description"],
                 :smtp_login => config["site_smtp_login"],
@@ -66,7 +69,10 @@ u = Site.create :name => config["site_name"],
                 :exception_notifications_prefix => config["site_exception_notifications_prefix"],
                 :shib_enabled => config["site_shibboleth"] == "true",
                 :shib_email_field => config["site_shibboleth_email_field"],
-                :shib_name_field => config["site_shibboleth_name_field"]
+                :shib_name_field => config["site_shibboleth_name_field"],
+                :site_agora_login => config["site_agora_login"],
+                :site_agora_login_server => config["site_agora_login_server"],
+                :site_agora_login_port => config["site_agora_login_port"]
 
 
 puts "* Create Permissions"

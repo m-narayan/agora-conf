@@ -51,6 +51,49 @@ class SessionsController
     end
   end
 
+  def create
+    if Site.current.site_agora_login
+      response=socket_login
+      if response["user_email"]
+        user=User.find_by_email(response["user_email"])
+        if user == nil
+          user=User.new(:login=>params[:login],:email => response["user_email"],:password=>params[:password],:password_confirmation =>params[:password],:activated_at=>Time.now)
+          title=""
+          full_name=response["user_name"]
+          pos=full_name.index(".")
+          if pos != nil
+            title = full_name[0,pos].downcase
+            full_name = full_name[pos+2,full_name.length]
+            full_name=full_name.gsub(",","")
+          end
+          user._full_name = full_name
+          user._prefix_key="title_formal.#{title}"
+          user.save!
+        else
+          user.update_attributes(:email => response["user_email"],:password=>params[:password],:password_confirmation =>params[:password])
+          #user.profile.update_attributes(:full_name => response["full_name"])
+        end
+      end
+    end
+
+    if authentication_methods_chain(:create)
+      respond_to do |format|
+        format.html {
+          redirect_back_or_default(after_create_path)
+        }
+        format.js
+      end unless performed?
+    else
+      respond_to do |format|
+        format.html {
+          flash[:error] ||= t(:invalid_credentials)
+          render(:action => "new")
+        }
+        format.js
+      end unless performed?
+    end
+  end
+
   private
 
   def after_create_path
@@ -74,5 +117,21 @@ class SessionsController
 
   def application_layout
     (request.format.to_sym == :m)? 'mobile.html' : 'application'
+  end
+
+  def socket_login
+    hostname = Site.current.site_agora_login_server
+    port = Site.current.site_agora_login_port
+    begin
+      socket = TCPSocket.open(hostname, port)
+      request={:username => params[:login],:password =>params[:password]}
+      socket.print request.to_json
+      socket.close_write
+      response = JSON.parse socket.gets
+      socket.close
+      response
+    rescue Exception => myException
+      puts "#{myException}"
+    end
   end
 end
