@@ -807,7 +807,7 @@ en:
       other: E-mails
     emails_tip: "type a list of emails separated by commas"
     internal_message: "Internal message"
-    mconf_users: "Mconf users"
+    mconf_users: "users"
     message: Message
     names: Names
     names_tip: "type to search users"
