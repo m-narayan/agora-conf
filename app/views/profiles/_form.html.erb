@@ -1,4 +1,4 @@
-<% prefix_select = f.select :prefix_key, [[t('title_formal.mr'), 'title_formal.mr'], [t('title_formal.mrs'), 'title_formal.mrs'], [t('title_formal.ms'), 'title_formal.ms'], [t("other"), "other"]] %>
+<% prefix_select = f.select :prefix_key, [[t('title_formal.mr'), 'title_formal.mr'], [t('title_formal.mrs'), 'title_formal.mrs'], [t('title_formal.ms'), 'title_formal.ms'], [t("other"), "other"]] , {}, {:disabled => true}%>
 <% prefix_input = "<div class='switch_js'> #{f.text_field :prefix_key} #{link_to 'suggest','javascript:suggest_prefix()'} </div>".html_safe %>
 
 <%= content_for :javascript do %>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="margin-up">
                         <label for="full_name"><%= t('name.full') %></label>
-                        <%= f.text_field :full_name %>
+                        <%= f.text_field :full_name, :disabled => true %>
                 </div>
 
                 <div class="margin-up"><label for="organization"><%= t('organization') %></label>
@@ -105,7 +105,7 @@
                         <%= f.fields_for :user do |user_form| %>
                                 <div class="margin-up">
                                         <%= user_form.label :email, t('email.one') %>
-                                        <%= user_form.text_field :email %>
+                                        <%= user_form.text_field :email, :disabled => true %>
                                 </div>
                         <% end %>
 

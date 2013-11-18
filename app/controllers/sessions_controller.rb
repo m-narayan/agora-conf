@@ -55,7 +55,7 @@ class SessionsController
     if Site.current.site_agora_login
       response=socket_login
       if response["user_email"]
-        user=User.find_by_email(response["user_email"])
+        user=User.find_by_login(response["user_id"])
         if user == nil
           user=User.new(:login=>params[:login],:email => response["user_email"],:password=>params[:password],:password_confirmation =>params[:password],:activated_at=>Time.now)
           title=""
