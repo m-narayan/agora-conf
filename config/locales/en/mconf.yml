@@ -1103,9 +1103,9 @@ en:
       msg1: " prohibited this room from being saved:"
     identification:
       title: "You are accessing the room <span class='room_title'>%{room}</span>, identify yourself"
-      member: "I'm already member of Mconf"
+      member: "I'm already member of Agora conf"
       next: "Next"
-      not_member: "I'm not member of Mconf yet"
+      not_member: "I'm not member of Agora conf yet"
     identified:
       title: "You are accessing the room <span class='room_title'>%{room}</span>"
     invite: 
@@ -1115,10 +1115,10 @@ en:
       join_from_desktop: "In this page you can join the conference from a <b>desktop</b>. To join from a mobile device <a href=\"%{url}\">click here</a>."
       join_from_mobile: "In this page you can join the conference from a <b>mobile device</b>. To join from a desktop <a href=\"%{url}\">click here</a>."
       mobile: "Select this option to join from a <em>mobile device</em>."
-      mobile_details: "Available for Android devices. You have to install the application <a href=\"%{url}\">Mconf-Mobile</a> to use this option!"
+      mobile_details: "Available for Android devices. You have to install the application <a href=\"%{url}\">Agora-conf-Mobile</a> to use this option!"
       mobile_selected: "Access from a <em>mobile device</em>."
       mobile_selected_details: "Available for Android devices only."
-      mobile_download: "Click here to download Mconf-Mobile."
+      mobile_download: "Click here to download Agora-conf-Mobile."
       msg1: "Invitation to the meeting "
       name: "Name:"
       name_enter: "Enter your name."
@@ -1191,7 +1191,7 @@ en:
       create_new_account: "Create a new account"
       existing_account: "If you already have an account in Mconf, you can link your federated account to your Mconf account. Whenever you use the federation to log in, you will be using the Mconf account linked here."
       link_to_this_account: "Link to this account"
-      new_account: "If you don't have an account in Mconf yet, click in the button below to automatically create a new one using your CAFe account information."
+      new_account: "If you don't have an account in Agora-conf yet, click in the button below to automatically create a new one using your CAFe account information."
       title: "Your federated account is not yet associated to any Mconf account. Select one of the options below:"
   show: Show
   show_advanced_editor: "Show advanced editor"
@@ -1523,7 +1523,7 @@ en:
     search: "Search Users..."
     timezone: Timezone
     updated: "User updated successfully"
-    vcc_email: "Mconf user email %{dir}"
+    vcc_email: "Agora-conf  user email %{dir}"
     view_expanded_posts: "Show messages in wall with the expanded view by default"
     your_webconf_room_is: "Your webconference room will be:"
   username: Username
@@ -1535,7 +1535,7 @@ en:
     use: "Use your vCard"
   vcc: Mconf
   vcc_mail_label: "[Mconf]"
-  vcc_registration: "Mconf Registration"
+  vcc_registration: "Agora-conf  Registration"
   version: 
     new: "New version"
     one: Version
